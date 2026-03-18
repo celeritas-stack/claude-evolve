@@ -1,0 +1,33 @@
+{
+  "name": "claude-evolve",
+  "version": "1.0.0",
+  "description": "Your CLAUDE.md learns automatically from every correction. Zero manual work.",
+  "author": "claude-evolve",
+  "homepage": "https://github.com/yourusername/claude-evolve",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PLUGIN_ROOT}/scripts/prompt-hook.js",
+            "timeout": 5000,
+            "async": true
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PLUGIN_ROOT}/scripts/stop-hook.js",
+            "timeout": 10000,
+            "async": true
+          }
+        ]
+      }
+    ]
+  }
+}

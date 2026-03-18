@@ -1,0 +1,25 @@
+{
+  "name": "claude-evolve",
+  "version": "1.0.0",
+  "description": "Your CLAUDE.md learns automatically from every correction you make. Zero manual work.",
+  "main": "scripts/prompt-hook.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "test": "node scripts/test.js"
+  },
+  "keywords": ["claude-code", "claude-code-plugin", "CLAUDE.md", "hooks", "ai-memory"],
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "tsx": "^4.15.0",
+    "typescript": "^5.4.5",
+    "@types/node": "^20.14.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
