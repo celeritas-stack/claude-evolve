@@ -1,9 +1,10 @@
 {
   "name": "claude-evolve",
   "version": "1.0.0",
-  "description": "Your CLAUDE.md learns automatically from every correction. Zero manual work.",
-  "author": "claude-evolve",
-  "homepage": "https://github.com/yourusername/claude-evolve",
+  "description": "Your CLAUDE.md learns automatically from every correction you make. Zero manual work.",
+  "author": {
+    "name": "celeritas-stack"
+  },
   "hooks": {
     "UserPromptSubmit": [
       {
