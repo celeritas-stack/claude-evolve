@@ -1,0 +1,20 @@
+{
+  "name": "celeritas-stack",
+  "owner": {
+    "name": "celeritas-stack",
+    "email": ""
+  },
+  "plugins": [
+    {
+      "name": "claude-evolve",
+      "source": "./",
+      "description": "Your CLAUDE.md learns automatically from every correction you make. Zero manual work.",
+      "version": "1.0.0",
+      "author": {
+        "name": "celeritas-stack"
+      },
+      "category": "productivity",
+      "keywords": ["CLAUDE.md", "memory", "learning", "hooks", "corrections"]
+    }
+  ]
+}
